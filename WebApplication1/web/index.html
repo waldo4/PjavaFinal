@@ -1,104 +1,165 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Java</title>
-    <link href="./css/estilos.css" rel="stylesheet" type="text/css">
-    <html lang="es">
+  <meta charset="utf-8">
+  <title>Java</title>
+  <link href="./css/estilos.css" rel="stylesheet" type="text/css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <html lang="es">
 </head>
 
 <body>
-    <div id="header">
+  <div id="header">
 
-        <ul class="nav">
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Servicios</a>
-                <ul>
-                    <li><a href="">Venta</a></li>
-                    <li><a href="">Colocación</a></li>
-                    <li><a href="">Reparación</a></li>
-                    <li><a href="">Pedidos</a>
-                        <ul>
-                            <li><a href="login.html">Ingresar</a></li>
-                            <li><a href="consultarpedidos.html">Consultar</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-
-            <li><a href="">Acerca de </a>
-                <ul>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="#Nuestra">Nuestra Misión</a></li>
-                    <li><a href="http://www.facebook.com">Historia</a></li>
-                </ul>
-            </li>
-            <li><a href="">Contacto</a></li>
-
-
-        </ul>
-    </div>
-
-    <div class="imagen" >
-        <hr>
-        <img src="./images/fond.png">
-        <hr>
-    </div>
-
-    <div class="texto" id="Nuestra">
-        <h1>Nuestra Misión</h1>
-        <p>"Nuestro negocio de computación se dedica a la venta de componentes y a la instalación de los mismos.
-            Ofrecemos una amplia gama de componentes de alta calidad, desde procesadores y tarjetas gráficas hasta
-            discos duros y memoria RAM. También contamos con un equipo altamente cualificado que se encarga de la
-            instalación de los componentes de manera rápida y eficiente. Además de componentes, también vendemos
-            software de todo tipo, desde sistemas operativos y aplicaciones de productividad hasta juegos y herramientas
-            de diseño. Nos esforzamos por ofrecer precios competitivos y un excelente servicio al cliente para
-            garantizar que nuestros clientes estén completamente satisfechos con sus compras."</p>
-
-    </div>
-
-    <br>
-
-    <div class="container">
-  
-        <ul class="slider">
-          <li id="slide1">
-            <img src="./images/c1.png"/>
-          </li>
-          <li id="slide2">
-            <img src="./images/c2.jpg"/>
-          </li>
-          <li id="slide3">
-            <img src="./images/c3.jpg"/>
+    <ul class="nav">
+      <li><a href="">Inicio</a></li>
+      <li><a href="">Servicios</a>
+        <ul>
+          <li><a href="">Venta</a></li>
+          <li><a href="">Colocación</a></li>
+          <li><a href="">Reparación</a></li>
+          <li><a href="">Pedidos</a>
+            <ul>
+              <li><a href="login.html">Ingresar</a></li>
+              <li><a href="consultarpedidos.html">Consultar</a></li>
+            </ul>
           </li>
         </ul>
-        
-        <ul class="menu">
-          <li>
-            <a href="#slide1">1</a>
-          </li>
-          <li>
-            <a href="#slide2">2</a>
-          </li>
-           <li>
-            <a href="#slide3">3</a>
-          </li>
+      </li>
+
+      <li><a href="">Acerca de </a>
+        <ul>
+          <li><a href="#Nosotros">Nosotros</a></li>
+          <li><a href="#Nuestra">Nuestra Misión</a></li>
+          <li><a href="http://www.facebook.com">Historia</a></li>
         </ul>
-        
+      </li>
+      <li><a href="">Contacto</a></li>
+
+
+    </ul>
+  </div>
+  <!-- Imagen de top -->
+  <div class="imagen">
+    <hr>
+    <!--— Imagen de alta resolución ---->
+    <img id="high" src="./images/superhigh.png" alt="Logo en alta resolución">
+
+    <!--— Imagen de baja resolución---->
+    <img id="low" src="./images/low.png" alt="Logo en baja resolución">
+
+    <hr>
+  </div>
+
+  <div class="texto" id="Nuestra">
+    <h1>Nuestra Misión</h1>
+    <p>"Nuestro negocio de computación se dedica a la venta de componentes y a la instalación de los mismos.
+      Ofrecemos una amplia gama de componentes de alta calidad, desde procesadores y tarjetas gráficas hasta
+      discos duros y memoria RAM. También contamos con un equipo altamente cualificado que se encarga de la
+      instalación de los componentes de manera rápida y eficiente. Además de componentes, también vendemos
+      software de todo tipo, desde sistemas operativos y aplicaciones de productividad hasta juegos y herramientas
+      de diseño. Nos esforzamos por ofrecer precios competitivos y un excelente servicio al cliente para
+      garantizar que nuestros clientes estén completamente satisfechos con sus compras."</p>
+
+  </div>
+  <div class="texto" id="Nosotros">
+    <hr class="l1">
+    <h1>Nosotros</h1>
+    <p>"Nuestro negocio de computación se dedica a la venta de componentes y a la instalación de los mismos.</p>
+
+  <div class="card">
+   
+    <div class="card__perfil">
+      <div class="card__nombre">
+        <img id="img" src="./images/p1.jpg" alt="">
+        <h2>Laura Ramires</h2>
+        <p>Diseñador web</p>
       </div>
+      <hr>
+      <div class="card__descripcion">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores perferendis rem ipsam
+          veniam reiciendis eveniet optio eum velit, dignissimos asperiores fugit molestias ipsum temporibus
+          rerum hic iste nulla vitae?</p>
+      </div>
+      <hr>
+      <div class="card__button">
+        <a class="enlace" href="#">Saber más</a>
+      </div>
+    </div>
+    <div class="card__perfil">
+      <div class="card__nombre">
+        <img id="img" src="./images/p2.jpg" alt="">
+        <h2>Sofia Turin</h2>
+        <p>Ingeniero</p>
+      </div>
+      <hr>
+      <div class="card__descripcion">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores perferendis rem ipsam
+          veniam reiciendis eveniet optio eum velit, dignissimos asperiores fugit molestias ipsum temporibus
+          rerum hic iste nulla vitae?</p>
+      </div>
+      <hr>
+      <div class="card__button">
+        <a class="enlace" href="#">Saber más</a>
+      </div>
+    </div>
+    <div class="card__perfil">
+      <div class="card__nombre">
+        <img id="img" src="./images/p3.jpg" alt="">
+        <h2>Seastian Perez</h2>
+        <p>Desarrollador front-end</p>
+      </div>
+      <hr>
+      <div class="card__descripcion">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores perferendis rem ipsam
+          veniam reiciendis eveniet optio eum velit, dignissimos asperiores fugit molestias ipsum temporibus
+          rerum hic iste nulla vitae?</p>
+      </div>
+      <hr>
+      <div class="card__button">
+        <a class="enlace" href="#">Saber más</a>
+      </div>
+    </div>
+
+
+  </div>
+
 <br>
 
-<div class="tarjeta">
-    <div class="titulo">Una tarjeta básica</div>
-    <div class="cuerpo">
-    <img src="./images/fondo.png" alt="muestra">
-       lorem ipsum
+
+  <footer class="footer-distributed">
+
+    <div class="footer-right">
+
+<!--       <a href="#"><i class="fa fa-facebook"></i></a>-->
+      <a href="#"><i class='bx bxl-facebook-circle' style='color:#ffffff'  ></i></a>
+      <a href="#"><i class='bx bxl-whatsapp' style='color:#ffffff'  ></i></a>
+      <a href="#"><i class='bx bxl-instagram'></i></a>
+      <a href="#"><i class='bx bxl-github'></i></a>
+
     </div>
-    <div class="pie">
-      <a href="#">Más información</a>
+
+    <div class="footer-left">
+
+      <p class="footer-links">
+        <a class="link-1" href="#">Inicio</a>
+
+        <a href="#">Servicio</a>
+
+        <a href="#">login</a>
+
+        <a href="#">Nosotros</a>
+
+        <a href="#">Acerca de</a>
+
+        <a href="#">Contacto</a>
+      </p>
+
+      <p>Company Name &copy; 2023</p>
     </div>
-    </div>
-    
+
+  </footer>
+
 
 </body>
 
